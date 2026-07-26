@@ -14,6 +14,8 @@
       --pink: #ff9fc6;
       --purple: #b9a4ff;
       --orange: #ffb46a;
+      --green: #8edbb6;
+      --coral: #ff9d8f;
       --shadow: 0 10px 24px rgba(51, 72, 105, 0.15);
     }
 
@@ -132,7 +134,7 @@
       min-height: 0;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      grid-template-rows: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(3, minmax(0, 1fr));
       gap: clamp(9px, 1.4vh, 16px);
     }
 
@@ -231,6 +233,11 @@
     .card-3 { --card-color: var(--blue); }
     .card-4 { --card-color: var(--purple); }
     .card-5 { --card-color: var(--orange); }
+    .card-6 { --card-color: var(--green); }
+    .card-7 {
+      --card-color: var(--coral);
+      grid-column: 2;
+    }
 
     .footer-note {
       margin: 0;
@@ -335,6 +342,15 @@
         <h2>Past Tense -ed</h2>
         <p>A game about the 3 sounds of suffix '-ed'.</p>
         <span class="open-button">Play Game →</span>
+      </a>
+
+      <a class="resource-card card-7"
+         href="https://limkimsze-maker.github.io/P3_SDR_PM_Spelling/"
+         target="_blank" rel="noopener">
+        <div class="icon" aria-hidden="true">📝</div>
+        <h2>PM Spelling Practice</h2>
+        <p>Listen, think and practise spelling the PM words correctly.</p>
+        <span class="open-button">Practise PM Spelling →</span>
       </a>
     </section>
 
