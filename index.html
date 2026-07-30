@@ -16,6 +16,7 @@
       --orange: #ffb46a;
       --green: #8edbb6;
       --coral: #ff9d8f;
+      --teal: #72d7d2;
       --shadow: 0 10px 24px rgba(51, 72, 105, 0.15);
     }
 
@@ -133,13 +134,14 @@
     .resource-grid {
       min-height: 0;
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       grid-template-rows: repeat(3, minmax(0, 1fr));
       gap: clamp(9px, 1.4vh, 16px);
     }
 
     .resource-card {
       --card-color: var(--blue);
+      grid-column: span 2;
       position: relative;
       min-width: 0;
       min-height: 0;
@@ -236,7 +238,12 @@
     .card-6 { --card-color: var(--green); }
     .card-7 {
       --card-color: var(--coral);
-      grid-column: 2;
+      grid-column: 2 / span 2;
+    }
+
+    .card-8 {
+      --card-color: var(--teal);
+      grid-column: 4 / span 2;
     }
 
     .card-7 h2 {
@@ -356,6 +363,15 @@
         <h2>Practice for Reading and Spelling Progress Monitoring</h2>
         <p>Practise both reading and spelling for progress monitoring.</p>
         <span class="open-button">Start Practice →</span>
+      </a>
+
+      <a class="resource-card card-8"
+         href="https://limkimsze-maker.github.io/P3-SDR-Cycle-1-to-18-ORF/"
+         target="_blank" rel="noopener">
+        <div class="icon" aria-hidden="true">📚</div>
+        <h2>ORF Practice: Cycles 1–18</h2>
+        <p>Practise oral reading fluency across SDR Cycles 1 to 18.</p>
+        <span class="open-button">Start Reading →</span>
       </a>
     </section>
 
